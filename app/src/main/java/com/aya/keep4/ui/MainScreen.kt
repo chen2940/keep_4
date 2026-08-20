@@ -361,7 +361,7 @@ private fun SettingsScreen(onBack: () -> Unit) {
                 showRootWarning = true
                 rootCountdown = 5
             } else {
-                Toast.makeText(context, "未检测到 Root（Magisk）", Toast.LENGTH_LONG).show()
+                Toast.makeText(context, "未检测到 Root（Magisk/KernelSU）", Toast.LENGTH_LONG).show()
             }
             return
         }
@@ -487,9 +487,9 @@ private fun SettingsScreen(onBack: () -> Unit) {
                         enabled = ShizukuHelper.isBinderReady()
                     )
                     RadioButtonPreference(
-                        title = "Root 保活（Magisk）",
+                        title = "Root 保活（Magisk/KernelSU）",
                         summary = if (rootAvailable) "可用：点击应用后台/电池白名单"
-                        else "未检测到 Root（Magisk）",
+                        else "未检测到 Root（Magisk/KernelSU）",
                         selected = keepAliveMode == KeepAliveMode.ROOT,
                         onClick = { selectKeepAliveMode(KeepAliveMode.ROOT) },
                         enabled = rootAvailable
@@ -733,7 +733,7 @@ private fun applyPrivilegedWhitelist(context: Context, label: String, runner: (S
         }
     }
     val msg = if (failed.isEmpty()) {
-        "$label 保活配置成功（$ok/${commands.size} 项）"
+        "$label 模式已启用"
     } else {
         "$label 配置部分失败：${failed.joinToString("; ")}"
     }

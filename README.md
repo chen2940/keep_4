@@ -27,7 +27,7 @@
 1. **前台服务**（默认）：常驻通知 + 前台服务
 2. **无障碍保活**：注册无障碍服务，系统强守护，被清理/崩溃后自动拉起四扬服务
 3. **Shizuku 保活**：通过 Shizuku 写入后台/电池白名单（需安装 Shizuku 并授权）
-4. **Root 保活（Magisk）**：通过 Magisk su 写入后台/电池白名单（弹出 Magisk 授权）
+4. **Root 保活（Magisk/KernelSU）**：通过 su（Magisk / KernelSU 均兼容）写入后台/电池白名单（弹出 root 管理器授权）
 
 > 白名单命令：`dumpsys deviceidle whitelist` + `cmd appops set ... RUN_IN_BACKGROUND / RUN_ANY_IN_BACKGROUND / RUN_FOREGROUND_SERVICE / START_FOREGROUND / BATTERY allow`
 ## 免责声明
