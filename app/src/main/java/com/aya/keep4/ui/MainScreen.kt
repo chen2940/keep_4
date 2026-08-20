@@ -543,8 +543,8 @@ private fun SettingsScreen(onBack: () -> Unit) {
                 Card {
                     BasicComponent(
                         title = "反馈 & 贡献",
-                        summary = "GitHub：github.com/aimmarc/keep_4",
-                        onClick = { context.openUrl("https://github.com/aimmarc/keep_4") }
+                        summary = "GitHub：github.com/chen2940/keep_4",
+                        onClick = { context.openUrl("https://github.com/chen2940/keep_4") }
                     )
                     BasicComponent(
                         title = "免责声明",
