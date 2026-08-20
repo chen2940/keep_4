@@ -35,6 +35,6 @@
 完全开源、完全免费，无需捐赠；本应用仅供该机型在第三方 ROM 下强制开启四扬声器使用，
 可能引起耗电增加、系统稳定性问题，如介意请卸载。谢绝盗用或用于违法行为。随缘更新。
 
-## release 发布
+## 源项目 release 发布
 
 <a href="https://github.com/aimmarc/keep_4/releases">点击查看</a>
