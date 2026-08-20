@@ -16,7 +16,7 @@
 
 ## 构建
 
-- Android Studio：Otter 3 Feature Drop 或更新（AGP 9.2.1 / Gradle 9.6.1 / Kotlin 2.4.0 / compileSdk 37 / minSdk 24）
+- Android Studio：Otter 3 Feature Drop 或更新（AGP 9.3.0 / Gradle 9.6.1 / Kotlin 2.4.0 / compileSdk 37 / minSdk 24）
 - 或命令行：`./gradlew assembleDebug`（需要 JDK 17+ 与 Android SDK 37）
 
 
